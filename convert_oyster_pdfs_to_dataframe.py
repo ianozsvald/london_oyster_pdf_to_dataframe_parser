@@ -146,24 +146,24 @@ def process_block(block_of_lines):
             if idx == len(block_of_lines):
                 break
             assert block_of_lines[idx][0] == "text", "We've not advanced correctly?! {} '{}'".format(idx, repr(block_of_lines))
-            is_tube = block_of_lines[idx][0] == 'text' and block_of_lines[idx+1][0] == 'text'
+            is_train = block_of_lines[idx][0] == 'text' and block_of_lines[idx+1][0] == 'text'
             frm = block_of_lines[idx][1]
             # tubes specify destination, bus doesn't
-            if is_tube:
+            if is_train:
                 to = block_of_lines[idx+1][1]
             else:
                 to = ""
             # we could optionally add the time in here
             parsed_items.append({'date': date,
                                  'from': frm,
-                                 'to': to})
+                                 'to': to,
+                                 'is_train': is_train})
 
             jump_by = 3 # text, price, time
-            if is_tube:
+            if is_train:
                 jump_by += 1
             idx += jump_by
 
-    #print(parsed_items)
     return parsed_items
 
 
