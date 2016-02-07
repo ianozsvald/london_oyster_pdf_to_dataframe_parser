@@ -1,4 +1,4 @@
-Given PDFs from Oyster website showing London Bus and Train journeys this script parses the PDFs, extracts line items and outputs a full Pandas DataFrame.
+Given PDFs from Oyster website showing London Bus and Train journeys this script parses the PDFs, extracts line items and outputs a full Pandas DataFrame. Write-up: http://ianozsvald.com/2016/02/07/convert-london-oyster-travel-pdfs-to-pandas-dataframes/
 
 The data is downloaded via:
  1. https://oyster.tfl.gov.uk/oyster/showCards.do?method=display
