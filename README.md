@@ -23,6 +23,7 @@ date
 
     $ python convert_oyster_pdfs_to_dataframe.py --directory="pdfs"  # search pdfs folder for PDFs
 
+The data can be loaded back in to Pandas with ```df = pandas.read_hdf('journeys.hdf5')```.
 
 # Tests
 
@@ -32,7 +33,12 @@ $ py.test convert_oyster_pdfs_to_dataframe.py
 
 # Status
 
-This is a "quick hack" in an evening to process the PDFs, written with Python 3.4 with textract 1.4.0 and pdftotext (Linux) 0.24.5:
+This is a "quick hack" in an evening to process the PDFs, written with:
+
+* Python 3.4
+* textract 1.4.0 https://textract.readthedocs.org/en/latest/ (using these Python 3.4 notes: http://www.tysonmaly.com/installing-textract-for-python-3/ )
+* pdftotext (Linux) 0.24.5
+
 ```
 $ pdftotext --help
 pdftotext version 0.24.5
