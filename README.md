@@ -8,15 +8,15 @@ The data is downloaded via:
 
 Given a PDF file from the Oyster website (or a folder of them), it'll generate an HDF5 based on a DataFrame that looks like:
 ```
-2016-01-27                   Angel          Kentish Town
-2016-01-27            Kentish Town                 Angel
-2016-01-28            Kentish Town      Leicester Square
-2016-01-28        Leicester Square            Old Street
-2016-01-28              Old Street          Kentish Town
-2016-01-30   Bus Journey, Route 46                      
+                             from is_train                 to
+date                                                         
+2016-01-03           Kentish Town     True   Clapham Junction
+2016-01-03       Clapham Junction     True       Kentish Town
+2015-12-15               Moorgate     True        Camden Town
+2016-01-30  Bus Journey, Route 46    False                   
 ```
 
-= Examples:
+! Examples:
 
     $ python convert_oyster_pdfs_to_dataframe.py --filename="pdfs/Amex_1001_201511.pdf"  # convert a single PDF
 
