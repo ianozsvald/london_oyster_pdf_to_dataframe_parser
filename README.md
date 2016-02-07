@@ -27,5 +27,15 @@ date
 # Tests
 
 ```
-py.test convert_oyster_pdfs_to_dataframe.py
+$ py.test convert_oyster_pdfs_to_dataframe.py
+```
+
+# Status
+
+This is a "quick hack" in an evening to process the PDFs, written with Python 3.4 with textract 1.4.0 and pdftotext (Linux) 0.24.5:
+```
+$ pdftotext --help
+pdftotext version 0.24.5
+Copyright 2005-2013 The Poppler Developers - http://poppler.freedesktop.org
+Copyright 1996-2011 Glyph & Cog, LLC
 ```
