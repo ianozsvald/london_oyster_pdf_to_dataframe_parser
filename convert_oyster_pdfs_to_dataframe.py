@@ -243,6 +243,6 @@ if __name__ == "__main__":
 
     # build dataframe, set date as the index, output as an HDF5 file
     df = pd.DataFrame(all_processed_blocks)
-    df = df.set_index('date')
+    df = df.set_index('date').sort(ascending=False)
     print("Writing {} rows to {}".format(df.shape, args.output_filename))
     df.to_hdf(args.output_filename, key="journeys")

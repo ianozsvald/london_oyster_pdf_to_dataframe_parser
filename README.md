@@ -8,12 +8,13 @@ The data is downloaded via:
 
 Given a PDF file from the Oyster website (or a folder of them), it'll generate an HDF5 based on a DataFrame that looks like:
 ```
-                             from is_train                 to
-date                                                         
-2016-01-03           Kentish Town     True   Clapham Junction
-2016-01-03       Clapham Junction     True       Kentish Town
-2015-12-15               Moorgate     True        Camden Town
-2016-01-30  Bus Journey, Route 46    False                   
+                             from is_train                to
+date                                                        
+2016-01-30  Bus Journey, Route 46    False                  
+2016-01-28           Kentish Town     True  Leicester Square
+2016-01-28             Old Street     True      Kentish Town
+2016-01-28       Leicester Square     True        Old Street
+2016-01-27                  Angel     True      Kentish Town
 ```
 
 # Examples:
